@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameworkVueHomework1</title>
+</head>
+
+<body>
+    <div id="counter">
+        Счётчик: {{ counter }}
+    </div>
+
+    <div id="task1">
+        <button class="buttonTurnText" @click="turnText">
+            {{ textButton }}
+        </button>
+    </div>
+
+    <div id="task2">
+        <ul class="list">
+            <li class="list__elem" v-for="elem in listElem" @click="delElemInList">{{ elem }}</li>
+        </ul>
+        <button class="buttonAddElemInList" @click="addNewTextElem">
+            {{ buttonName }}
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
