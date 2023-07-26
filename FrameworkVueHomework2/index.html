@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameworkVueHomework2</title>
+</head>
+
+<body>
+    <div id="task">
+        <pre>     <button @click="sortInAscendingOrder">Sort \|/</button> <button @click="sortInDescendingOrder">Sort /|\</button></pre>
+        <ol>
+            <pre>Products   |   Price</pre>
+            <li v-for="item in products" :key="item.id">
+                <pre>{{ item.name }}   |   {{ item.price }}</pre>
+            </li>
+        </ol>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
